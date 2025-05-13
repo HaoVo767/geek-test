@@ -1,5 +1,5 @@
 import { Avatar, Card, Typography, Image } from "antd"
-import GenerateAvatar from "../generate_avatar"
+import GenerateAvatar from "../../utils/generate_avatar"
 
 export interface IAlbumDetail {
   albumId: number

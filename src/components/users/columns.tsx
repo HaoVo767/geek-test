@@ -1,7 +1,7 @@
 import { Avatar, Button, Space, Typography, type TableColumnsType } from "antd"
 import type { IUser } from "../../types"
 import { EyeOutlined } from "@ant-design/icons"
-import GenerateAvatar from "../generate_avatar"
+import GenerateAvatar from "../../utils/generate_avatar"
 
 export const columns: TableColumnsType<IUser> = [
   {

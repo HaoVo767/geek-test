@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom"
 import { router } from "./router"
 import MainLayout from "./layouts"
-import DynamicTitle from "./components/dynamicTitle"
+import DynamicTitle from "./utils/dynamicTitle"
 const App = () => {
   return (
     <Router>

@@ -1,3 +1,4 @@
+import LogoHeader from "../../assets/geekup-logo-general.svg"
 const Header = () => {
   return (
     <div className="w-max">
@@ -5,7 +6,7 @@ const Header = () => {
         <img
           alt="GEEK Up - PF GI"
           width={100}
-          src="https://geekup.vn/Icons/geekup-logo-general.svg"
+          src={LogoHeader}
           className="hơver:cursor-pointer"
         />
       </a>

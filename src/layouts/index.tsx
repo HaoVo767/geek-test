@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import LogoHeader from "../assets/geekup-logo-general.svg"
 import { UserOutlined, UnorderedListOutlined, ArrowLeftOutlined } from "@ant-design/icons"
 import type { MenuProps } from "antd"
 import { Breadcrumb, Button, Drawer, Layout, Menu, theme, Typography } from "antd"
@@ -58,7 +59,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ ...props }) => {
           ),
           href: `/${window?.location?.pathname?.split("/")[1]}`,
         },
-        { title: <div className="text-black">Show</div>, href: "#" },
+        { title: <div className="text-black">Show</div> },
       ]
     : undefined
   return (
@@ -80,9 +81,9 @@ const MainLayout: React.FC<MainLayoutProps> = ({ ...props }) => {
             title={
               <a href="/">
                 <img
-                  alt="logo"
+                  alt="GEEK Up - PF GI"
                   width={100}
-                  src="https://geekup.vn/Icons/geekup-logo-general.svg"
+                  src={LogoHeader}
                   className="hơver:cursor-pointer"
                 />
               </a>

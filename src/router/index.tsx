@@ -9,15 +9,15 @@ export const router = [
     component: <AlbumsPage />,
   },
   {
+    path: "/albums/:id",
+    component: <AlbumDetailPage />,
+  },
+  {
     path: "/users",
     component: <UsersPage />,
   },
   {
     path: "/users/:id",
     component: <UserDetailPage />,
-  },
-  {
-    path: "/albums/:id",
-    component: <AlbumDetailPage />,
   },
 ]
