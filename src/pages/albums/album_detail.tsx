@@ -7,6 +7,7 @@ import type { IAlbumDetail } from "../../components/albums/albums_detail/albumDe
 import DetailAlbum from "../../components/albums/albums_detail/albumDetail"
 
 const AlbumDetailPage = () => {
+  console.log("import.meta.env ", import.meta.env)
   const userId = sessionStorage.getItem("userId")
   const { id: albumId } = useParams()
   const [isLoading, setIsLoading] = useState(false)
