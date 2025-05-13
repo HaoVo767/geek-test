@@ -1,54 +1,38 @@
-# React + TypeScript + Vite
+# 📌 geek-frontend-test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **geek-frontend-test**! This guide will help you set up and start the project.
 
-Currently, two official plugins are available:
+## 📌 1. Yêu cầu hệ thống
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Trước khi bắt đầu, đảm bảo bạn đã cài đặt:
 
-## Expanding the ESLint configuration
+- **Node.js** (`>= 18.0.0`) – [Download](https://nodejs.org/)
+- **Git** (optional) – [Download](https://git-scm.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🔹 2. Cách cài đặt dự án
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Clone dự án từ GitHub:
+
+```bash
+git clone https://github.com/HaoVo767/geek-test.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Cài đặt dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
+```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+Khởi chạy môi trường phát triển:
+
+```bash
+npm run dev
+```
+
+Ứng dụng sẽ chạy tại http://localhost:5173/ (hoặc theo cấu hình vite.config.js).
+
+Để tạo bản build cho production:
+
+```bash
+npm run build
 ```

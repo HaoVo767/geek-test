@@ -14,7 +14,7 @@ const AlbumTable: React.FC<AlbumTableProps> = ({ ...props }) => {
   const query = queryString.parse(window.location.search)
   useEffect(() => {
     if (!query?.current || !query?.pageSize) {
-      const stringified = queryString.stringify({ pageSize: 10, current: 1 })
+      const stringified = queryString.stringify({ pageSize: 20, current: 1 })
       navigate(`/albums?${stringified}`)
     }
   })
@@ -29,7 +29,7 @@ const AlbumTable: React.FC<AlbumTableProps> = ({ ...props }) => {
       pagination={{
         onChange: onPanigationChange,
         current: query.current ? Number(query.current) : 1,
-        pageSize: query.pageSize ? Number(query.pageSize) : 10,
+        pageSize: query.pageSize ? Number(query.pageSize) : 20,
       }}
     />
   )
