@@ -1,10 +1,10 @@
 import axios from "axios"
-import type { IUserAlbum } from "../components/user_detail/colums"
+import type { IUserAlbum } from "../../components/users/user_detail/colums"
 
 export const getUserAlbums = async (userId: number) => {
   const reponse = await Promise.all([
-    axios.get(`https://jsonplaceholder.typicode.com/users/${userId}/albums`),
-    axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`),
+    axios.get(`${import.meta.env.VITE_BASE_URL}/users/${userId}/albums`),
+    axios.get(`${import.meta.env.VITE_BASE_URL}/users/${userId}`),
   ])
     .then(([userAlbums, usersResponse]) => {
       return {

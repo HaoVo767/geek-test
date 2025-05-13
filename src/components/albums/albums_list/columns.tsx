@@ -1,7 +1,7 @@
 import { EyeOutlined } from "@ant-design/icons"
 import { Avatar, Button, Space, type TableProps } from "antd"
-import GenerateAvatar from "../../utils/generate_avatar"
-import type { IAlbums } from "../../types"
+import GenerateAvatar from "../../../utils/generate_avatar"
+import type { IAlbums } from "../../../types"
 
 export const columns: TableProps<IAlbums & { userName: string }>["columns"] = [
   {

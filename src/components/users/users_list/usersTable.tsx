@@ -1,7 +1,7 @@
 import { Table } from "antd"
 import { columns } from "./columns"
 import type React from "react"
-import type { IUser } from "../../types"
+import type { IUser } from "../../../types"
 
 interface UsersTableProps {
   usersData: IUser[]

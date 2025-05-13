@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
-import { getUserAlbums } from "../../services/getUserAlbums"
-import UserDetailTable from "../../components/user_detail/user_detail_table"
+import { getUserAlbums } from "../../services/users/getUserAlbums"
+import UserDetailTable from "../../components/users/user_detail/user_detail_table"
 import { Spin } from "antd"
-import type { IUserAlbum } from "../../components/user_detail/colums"
+import type { IUserAlbum } from "../../components/users/user_detail/colums"
 import type { IUser } from "../../types"
 
 function UserDetailPage() {

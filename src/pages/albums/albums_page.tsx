@@ -1,8 +1,8 @@
 import { Spin } from "antd"
 import type { IAlbums } from "../../types"
 import { useEffect, useState } from "react"
-import { getAlbums } from "../../services/getAlbums"
-import AlbumTable from "../../components/albums/albumsTable"
+import { getAlbums } from "../../services/albums/getAlbums"
+import AlbumTable from "../../components/albums/albums_list/albumsTable"
 
 function AlbumsPage() {
   const [albumsData, setAlbumsData] = useState<(IAlbums & { userName: string })[]>([])

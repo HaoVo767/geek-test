@@ -2,8 +2,8 @@ import axios from "axios"
 
 export const getAlbumDetail = async ({ userId, albumId }: { userId: string; albumId: string }) => {
   const response = await Promise.all([
-    axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`),
-    axios.get(`https://jsonplaceholder.typicode.com/albums/${albumId}/photos`),
+    axios.get(`${import.meta.env.VITE_BASE_URL}/users/${userId}`),
+    axios.get(`${import.meta.env.VITE_BASE_URL}/albums/${albumId}/photos`),
   ])
     .then(([userResponse, albumResponse]) => {
       return {

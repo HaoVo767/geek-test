@@ -1,5 +1,5 @@
 import { Table } from "antd"
-import type { IAlbums } from "../../types"
+import type { IAlbums } from "../../../types"
 import { columns } from "./columns"
 import queryString from "query-string"
 import { useEffect } from "react"

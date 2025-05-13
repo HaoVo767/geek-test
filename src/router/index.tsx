@@ -1,7 +1,7 @@
-import AlbumDetailPage from "../pages/album_detail/page"
-import AlbumsPage from "../pages/albums/page"
-import UserDetailPage from "../pages/user_detail/page"
-import UsersPage from "../pages/users/page"
+import AlbumDetailPage from "../pages/albums/album_detail"
+import AlbumsPage from "../pages/albums/albums_page"
+import UserDetailPage from "../pages/users/user_detail"
+import UsersPage from "../pages/users/users_page"
 
 export const router = [
   {

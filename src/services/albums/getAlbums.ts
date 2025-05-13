@@ -1,10 +1,10 @@
 import axios from "axios"
-import type { IAlbums, IUser } from "../types"
+import type { IAlbums, IUser } from "../../types"
 
 export const getAlbums = async () => {
   const reponse = await Promise.all([
-    axios.get("https://jsonplaceholder.typicode.com/users"),
-    axios.get("https://jsonplaceholder.typicode.com/albums"),
+    axios.get(`${import.meta.env.VITE_BASE_URL}/users`),
+    axios.get(`${import.meta.env.VITE_BASE_URL}/albums`),
   ])
     .then(([usersResponse, albumsResponse]) => {
       return albumsResponse?.data?.map((album: IAlbums) => ({

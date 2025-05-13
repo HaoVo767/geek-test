@@ -1,6 +1,6 @@
-import type { IUser } from "../../types"
+import type { IUser } from "../../../types"
 import { Avatar, Card, Table, Typography } from "antd"
-import GenerateAvatar from "../../utils/generate_avatar"
+import GenerateAvatar from "../../../utils/generate_avatar"
 import { columns, type IUserAlbum } from "./colums"
 
 interface UserDetailTableProps {

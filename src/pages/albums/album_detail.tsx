@@ -1,10 +1,10 @@
 import { Spin } from "antd"
 import { useEffect, useState } from "react"
-import { getAlbumDetail } from "../../services/getAlbumDetail"
+import { getAlbumDetail } from "../../services/albums/getAlbumDetail"
 import { useParams } from "react-router-dom"
 import type { IUser } from "../../types"
-import type { IAlbumDetail } from "../../components/albums_detail/albumDetail"
-import DetailAlbum from "../../components/albums_detail/albumDetail"
+import type { IAlbumDetail } from "../../components/albums/albums_detail/albumDetail"
+import DetailAlbum from "../../components/albums/albums_detail/albumDetail"
 
 const AlbumDetailPage = () => {
   const userId = sessionStorage.getItem("userId")

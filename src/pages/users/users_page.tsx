@@ -1,6 +1,6 @@
 import { Spin } from "antd"
-import UsersTable from "../../components/users/usersTable"
-import { getUsers } from "../../services/getUser"
+import UsersTable from "../../components/users/users_list/usersTable"
+import { getUsers } from "../../services/users/getUser"
 import { useEffect, useState } from "react"
 import type { IUser } from "../../types"
 
