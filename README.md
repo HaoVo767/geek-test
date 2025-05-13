@@ -15,6 +15,7 @@ Clone dự án từ GitHub:
 
 ```bash
 git clone https://github.com/HaoVo767/geek-test.git
+cd geek-test
 ```
 
 Cài đặt dependencies:
