@@ -44,7 +44,14 @@ export const columns: TableColumnsType<IUser> = [
     title: "Website",
     dataIndex: "website",
     key: "website",
-    render: (text) => <a href={`https://${text}`}>{text}</a>,
+    render: (text) => (
+      <a
+        href={`https://${text}`}
+        target="_blank"
+      >
+        {text}
+      </a>
+    ),
   },
   {
     title: "Actions",

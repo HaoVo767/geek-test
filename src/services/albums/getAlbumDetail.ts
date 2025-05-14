@@ -1,3 +1,4 @@
+import type { IAlbumDetail } from "./../../components/albums/albums_detail/albumDetail"
 import axios from "axios"
 
 export const getAlbumDetail = async ({ userId, albumId }: { userId: string; albumId: string }) => {
@@ -9,6 +10,18 @@ export const getAlbumDetail = async ({ userId, albumId }: { userId: string; albu
       return {
         user: userResponse.data,
         albumData: albumResponse.data,
+      }
+    })
+    .then((data) => {
+      return {
+        user: data.user,
+        albumData: data.albumData.map((item: IAlbumDetail) => {
+          return {
+            ...item,
+            url: item.url.replace("https://via.placeholder.com", "https://dummyjson.com/image"),
+            thumbnailUrl: item.thumbnailUrl.replace("https://via.placeholder.com", "https://dummyjson.com/image"),
+          }
+        }),
       }
     })
     .catch((error) => {
